@@ -68,11 +68,6 @@ Route::get('/group-test/{id}', function(Request $request, $id){
 
 
 
-//posts
-Route::get('/post', 'PostController@myPosts')->name('test.post');
-Route::get('/post/getPostData', 'PostController@getPostData')->name('test.getPostData');
-Route::get('/post/getGroups', 'PostController@getGroups')->name('test.getGroups');
-
 
 
 Auth::routes();

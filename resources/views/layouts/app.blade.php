@@ -281,11 +281,11 @@ if($user_meta['temp_user'] === true){
             </div>
         </div>
     </nav>
-{{--     <style type="text/css">
+    <style type="text/css">
         .dropdown-menu.navd:before {
             content: none !important;
         }
-    </style> --}}
+    </style>
     <nav class="navbar left-navbar">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -307,8 +307,6 @@ if($user_meta['temp_user'] === true){
                     <li @if ($route=='content-curation' || $route=='content-curation-pending' || $route=='content-curation-active' || $route=='content-curation-completed') class="active" @endif>
                         <a href="{{url('/content-curation')}}" class="toggle"> <i class="fa fa-file-text-o"></i> Content
                             Curation</a></li>
-                    <li @if ($route=='test.post') class="active" @endif><a href="{{ route('test.post') }}"> <i
-                                    class="fa fa-file-text"></i> Post</a></li>
                     <li @if ($route=='rss-automation' || $route=='rss-automation-pending' || $route=='rss-automation-active' || $route=='rss-automation-completed') class="active" @endif>
                         <a href="{{url('/rss-automation')}}" class="toggle"> <i class="fa fa-rss"></i> RSS
                             Automation</a></li>
